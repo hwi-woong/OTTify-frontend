@@ -1,0 +1,14 @@
+/*전체 레이아웃*/
+/*Title*/
+.ott_title h1{
+  font-size: 36px;
+}
+
+.ott_title span{
+  color: var(--primary);
+}
+
+.change_ott{
+  width: 736px;
+  margin: 64px auto 160px;
+}
