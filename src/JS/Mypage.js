@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import '../App.css';
 import '../CSS/Mypage.css'
 import img1 from '../img/사진.jpg';
@@ -8,6 +9,10 @@ import star from '../img/star.png';
 
 
 const Mypage = () => {
+  const navigate = useNavigate();
+  const goToOTT = () => {
+    navigate('/ChangeOTT');
+  }
   
   return (
     <div className = "Mypage">
@@ -35,7 +40,7 @@ const Mypage = () => {
               <img src = {ott} className='ott_logo'></img>
               <img src = {ott} className='ott_logo'></img>
               <img src = {ott} className='ott_logo'></img>
-              <img src = {arrow} className='arrow' alt = "화면 전환 화살표"></img>
+              <img src = {arrow} className='arrow' onClick={goToOTT} alt = "화면 전환 화살표"></img>
             </div>
           </div>
 
