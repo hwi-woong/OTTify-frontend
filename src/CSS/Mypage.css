@@ -1,2 +1,25 @@
 /*Mypage.js*/
 /*프로필*/
+
+.Mypage{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--neutral);
+}
+
+.my_profile{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 736px;
+  height: 261px;
+  border-radius: 15px;
+  margin: 60px auto 0;
+}
+
+.profile_img{
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  margin: 32px 0 0 32px;
+}
