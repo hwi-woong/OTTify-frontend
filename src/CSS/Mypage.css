@@ -1,0 +1,145 @@
+/*Mypage.js*/
+/*프로필*/
+
+.Mypage{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--neutral);
+}
+
+.my_profile{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 736px;
+  height: 261px;
+  border-radius: 15px;
+  margin: 60px auto 0;
+}
+
+.profile_img{
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  margin: 32px 0 0 32px;
+}
+
+/*프로필 info 설정*/
+.profile_bottom{
+  display:flex;
+  
+}
+
+.profile_info{
+  flex: 1;
+  width: 200px;
+  margin-top: 7px;
+  margin-left: 32px;
+}
+
+.info_nickname{
+  position: relative;
+}
+
+.name{
+  color: var(--gray_800);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.badge{
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.info_email{
+  width: 200px;
+  overflow: hidden;
+}
+
+.email{
+  width: 200px;
+  font-size: 14px;
+  color: var(--gray_600);
+} 
+
+.edit_btn{
+  width: 200px;
+  height: 23px;
+  border-radius: 7px;
+  border-style: none;
+  background-color: var(--gray_100);
+}
+
+/*구독 중인 OTT*/
+.profile_ott{
+  flex: 1;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.ott_mine{
+  color: var(--gray_700);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ott_imgs{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.ott_logo{
+  background-color: var(--gray_100);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  padding: 7px;
+  margin-right: 7px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.arrow{
+  width: 12px;
+  height: 12px;
+  margin-left: 7px;
+}
+
+
+/*내 리뷰 평균 평점*/
+.profile_grade{
+  flex: 1;
+  float: right;
+  margin-right: 32px;
+  margin-top: 10px;
+}
+
+.grade_mine{
+  color: var(--gray_700);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.grade_num{
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+.grade_star{
+  margin-right: 5px;
+}
+
+.grade_point{
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.grade_graph{
+  display: inline-block;
+  margin-top: 10px;
+}
