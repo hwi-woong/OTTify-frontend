@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import '../App.css';
 import '../CSS/Mypage.css'
+import GradeGraph from './GradeGraph';
 import img1 from '../img/사진.jpg';
 import badge from '../img/profile_badge.png';
 import ott from '../img/netflix.png';
@@ -14,6 +15,8 @@ const Mypage = () => {
     navigate('/ChangeOTT');
   }
   
+  const reviews = [0.5, 0.5, 1, 1.5, 2, 2, 2.5, 3, 4, 5]
+
   return (
     <div className = "Mypage">
       <div className = "my_profile">
@@ -53,7 +56,7 @@ const Mypage = () => {
               </div>
             </div>
             <div className='grade_graph'>
-              =리뷰 평점 그래프=
+              <GradeGraph reviews = {reviews}/>
             </div>
           </div>
         </div>
