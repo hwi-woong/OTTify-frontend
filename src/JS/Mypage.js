@@ -1,10 +1,10 @@
-import './App.css';
-import './CSS/Mypage.css'
-import img1 from './img/사진.jpg';
-import badge from './img/profile_badge.png';
-import ott from './img/netflix.png';
-import arrow from './img/arrow.png';
-import star from './img/star.png';
+import '../App.css';
+import '../CSS/Mypage.css'
+import img1 from '../img/사진.jpg';
+import badge from '../img/profile_badge.png';
+import ott from '../img/netflix.png';
+import arrow from '../img/arrow.png';
+import star from '../img/star.png';
 
 
 const Mypage = () => {
