@@ -23,3 +23,53 @@
   border-radius: 100%;
   margin: 32px 0 0 32px;
 }
+
+/*프로필 info 설정*/
+.profile_bottom{
+  display:flex;
+  
+}
+
+.profile_info{
+  flex: 1;
+  width: 200px;
+  margin-top: 7px;
+  margin-left: 32px;
+}
+
+.info_nickname{
+  position: relative;
+}
+
+.name{
+  color: var(--gray_800);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.badge{
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.info_email{
+  width: 200px;
+  overflow: hidden;
+}
+
+.email{
+  width: 200px;
+  font-size: 14px;
+  color: var(--gray_600);
+} 
+
+.edit_btn{
+  width: 200px;
+  height: 23px;
+  border-radius: 7px;
+  border-style: none;
+  background-color: var(--gray_100);
+}
