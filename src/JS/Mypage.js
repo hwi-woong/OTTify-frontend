@@ -7,6 +7,9 @@ import badge from '../img/profile_badge.png';
 import ott from '../img/netflix.png';
 import arrow from '../img/arrow.png';
 import star from '../img/star.png';
+import poster from '../img/poster.jpg';
+import favorite from '../img/favorite.png';
+import close from '../img/close.png';
 
 
 const Mypage = () => {
@@ -57,6 +60,114 @@ const Mypage = () => {
             </div>
             <div className='grade_graph'>
               <GradeGraph reviews = {reviews}/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='my_content'>
+        <div className='content_div'>
+          <div className='content_subject'>
+            <span className='content_mine'>내 취향 장르</span>
+            <select className='content_select' name = 'genre_1st'>
+              <option selected disabled hidden>1순위 장르</option>
+              <option value = "action">액션</option>
+              <option value = "thriller">스릴러</option>
+              <option value = "musical">뮤지컬</option>
+              <option value = "comedy">코미디</option>
+            </select>
+          </div>
+
+          <div className='content_pick' >
+            <button className='pick'>액션</button>
+            <button className='pick'>스릴러</button>
+            <button className='pick'>서스펜스</button>
+            <button className='pick'>미스터리</button>
+            <button className='pick'>로맨스</button>
+            <button className='pick'>느와르</button>
+            <button className='pick'>서부극</button>
+            <button className='pick'>음악영화</button>
+            <button className='pick'>뮤지컬</button>
+            <button className='pick'>다큐멘터리</button>
+            <button className='pick'>모큐멘터리</button>
+            <button className='pick'>재난</button>
+            <button className='pick'>블록버스터</button>
+            <button className='pick'>스펙타클</button>
+            <button className='pick'>시리즈</button>
+            <button className='pick'>서사극</button>
+            <button className='pick'>로맨틱코미디</button>
+            <button className='pick'>코미디</button>
+            <button className='pick'>음악영화</button>
+            <button className='pick'>B급</button>
+            <button className='pick'>모험</button>
+            <button className='pick'>가족</button>
+          </div>
+
+          <div className='content_like'>
+            <span className='like_title'>보고싶어요</span>
+            <div className='like_posters'>
+              <div>
+                <img src = {poster} className='poster_img_like'></img>
+                <img src = {favorite} className='poster_favorite'></img>
+              </div>
+              <div>
+                <img src = {poster} className='poster_img_like'></img>
+                <img src = {favorite} className='poster_favorite'></img>
+              </div>
+              <div>
+                <img src = {poster} className='poster_img_like'></img>
+                <img src = {favorite} className='poster_favorite'></img>
+              </div>
+              <div>
+                <img src = {poster} className='poster_img_like'></img>
+                <img src = {favorite} className='poster_favorite'></img>
+              </div>
+              <div>
+                <img src = {poster} className='poster_img_like'></img>
+                <img src = {favorite} className='poster_favorite'></img>
+              </div>
+              <div>
+                <img src = {poster} className='poster_img_like'></img>
+                <img src = {favorite} className='poster_favorite'></img>
+              </div>
+              <div>
+                <img src = {poster} className='poster_img_like'></img>
+                <img src = {favorite} className='poster_favorite'></img>
+              </div>
+            </div>
+          </div>
+
+          <div className='content_hate'>
+            <span className='hate_title'>관심없어요</span>
+            <div className='hate_posters'>
+              <div>
+                <img src = {poster} className='poster_img_hate'></img>
+                <img src = {close} className='poster_x'></img>
+              </div>
+              <div>
+                <img src = {poster} className='poster_img_hate'></img>
+                <img src = {close} className='poster_x'></img>
+              </div>
+              <div>
+                <img src = {poster} className='poster_img_hate'></img>
+                <img src = {close} className='poster_x'></img>
+              </div>
+              <div>
+                <img src = {poster} className='poster_img_hate'></img>
+                <img src = {close} className='poster_x'></img>
+              </div>
+              <div>
+                <img src = {poster} className='poster_img_hate'></img>
+                <img src = {close} className='poster_x'></img>
+              </div>
+              <div>
+                <img src = {poster} className='poster_img_hate'></img>
+                <img src = {close} className='poster_x'></img>
+              </div>
+              <div>
+                <img src = {poster} className='poster_img_hate'></img>
+                <img src = {close} className='poster_x'></img>
+              </div>
             </div>
           </div>
         </div>
