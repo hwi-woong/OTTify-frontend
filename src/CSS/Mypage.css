@@ -207,3 +207,31 @@
 .content_select:focus{
   padding: 1px;
 }
+
+/*내 취향 장르 (2순위)*/
+.content_pick{
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.pick{
+  display: inline-block;
+  font-size: 11px;
+  padding: 4px 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-radius: 15px;
+  border: var(--gray_200);
+}
+
+.content_like{
+  margin-bottom: 20px;
+}
+
+.like_title, .hate_title{
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--gray_900);
+  display: inline-block;
+  margin-bottom: 8px;
+}
