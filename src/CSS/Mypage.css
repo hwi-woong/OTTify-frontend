@@ -143,3 +143,67 @@
   display: inline-block;
   margin-top: 10px;
 }
+
+
+/*콘텐츠*/
+/*내 취향 장르 (1순위)*/
+.my_content{
+  display:flex;
+  flex-direction: column;
+  width: 736px;
+  height: 538px;
+  border-radius: 15px;
+  background-color: white;
+  margin: 15px auto;
+}
+
+.content_div{
+  margin: auto 32px;
+}
+
+.content_subject{
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.content_mine{
+  color: var(--gray_900);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.content_select{
+  width: 175px;
+  height: 24px;
+  margin-left: 10px;
+  color: var(--primary);
+  border-radius: 5px;
+  border: 1px solid var(--gray_400);
+  padding: 1px;
+  font-size: 12px;
+}
+
+
+.content_subject .content_select option{
+  padding: 1px;
+  font-size: 12px;
+  color: black;
+  background-color: white;
+}
+
+.content_subject option:hover{
+  background-color: red;
+}
+
+.content_select option:checked{
+  width: 175px;
+  height: 24px;
+  background-color: var(--orange_100);
+  color: var(--primary);
+  padding: 8px;
+}
+
+.content_select:focus{
+  padding: 1px;
+}
