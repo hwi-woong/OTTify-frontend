@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import '../App.css';
 import '../CSS/Mypage.css'
 import GradeGraph from './GradeGraph';
+import PickButton from "./PickButton";
 import img1 from '../img/사진.jpg';
 import badge from '../img/profile_badge.png';
 import ott from '../img/netflix.png';
@@ -79,28 +80,28 @@ const Mypage = () => {
           </div>
 
           <div className='content_pick' >
-            <button className='pick'>액션</button>
-            <button className='pick'>스릴러</button>
-            <button className='pick'>서스펜스</button>
-            <button className='pick'>미스터리</button>
-            <button className='pick'>로맨스</button>
-            <button className='pick'>느와르</button>
-            <button className='pick'>서부극</button>
-            <button className='pick'>음악영화</button>
-            <button className='pick'>뮤지컬</button>
-            <button className='pick'>다큐멘터리</button>
-            <button className='pick'>모큐멘터리</button>
-            <button className='pick'>재난</button>
-            <button className='pick'>블록버스터</button>
-            <button className='pick'>스펙타클</button>
-            <button className='pick'>시리즈</button>
-            <button className='pick'>서사극</button>
-            <button className='pick'>로맨틱코미디</button>
-            <button className='pick'>코미디</button>
-            <button className='pick'>음악영화</button>
-            <button className='pick'>B급</button>
-            <button className='pick'>모험</button>
-            <button className='pick'>가족</button>
+            <PickButton className='pick'>액션</PickButton>
+            <PickButton className='pick'>스릴러</PickButton>
+            <PickButton className='pick'>서스펜스</PickButton>
+            <PickButton className='pick'>미스터리</PickButton>
+            <PickButton className='pick'>로맨스</PickButton>
+            <PickButton className='pick'>느와르</PickButton>
+            <PickButton className='pick'>서부극</PickButton>
+            <PickButton className='pick'>음악영화</PickButton>
+            <PickButton className='pick'>뮤지컬</PickButton>
+            <PickButton className='pick'>다큐멘터리</PickButton>
+            <PickButton className='pick'>모큐멘터리</PickButton>
+            <PickButton className='pick'>재난</PickButton>
+            <PickButton className='pick'>블록버스터</PickButton>
+            <PickButton className='pick'>스펙타클</PickButton>
+            <PickButton className='pick'>시리즈</PickButton>
+            <PickButton className='pick'>서사극</PickButton>
+            <PickButton className='pick'>로맨틱코미디</PickButton>
+            <PickButton className='pick'>코미디</PickButton>
+            <PickButton className='pick'>음악영화</PickButton>
+            <PickButton className='pick'>B급</PickButton>
+            <PickButton className='pick'>모험</PickButton>
+            <PickButton className='pick'>가족</PickButton>
           </div>
 
           <div className='content_like'>
