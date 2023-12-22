@@ -235,3 +235,17 @@
   display: inline-block;
   margin-bottom: 8px;
 }
+
+
+/*보고싶어요, 관심없어요*/
+.content_like{
+  margin-bottom: 20px;
+}
+
+.like_title, .hate_title{
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--gray_900);
+  display: inline-block;
+  margin-bottom: 8px;
+}

@@ -3,6 +3,7 @@ import '../App.css';
 import '../CSS/Mypage.css'
 import GradeGraph from './GradeGraph';
 import PickButton from "./PickButton";
+import SlidePoster from "./SlidePoster";
 import img1 from '../img/사진.jpg';
 import badge from '../img/profile_badge.png';
 import ott from '../img/netflix.png';
@@ -107,34 +108,7 @@ const Mypage = () => {
           <div className='content_like'>
             <span className='like_title'>보고싶어요</span>
             <div className='like_posters'>
-              <div>
-                <img src = {poster} className='poster_img_like'></img>
-                <img src = {favorite} className='poster_favorite'></img>
-              </div>
-              <div>
-                <img src = {poster} className='poster_img_like'></img>
-                <img src = {favorite} className='poster_favorite'></img>
-              </div>
-              <div>
-                <img src = {poster} className='poster_img_like'></img>
-                <img src = {favorite} className='poster_favorite'></img>
-              </div>
-              <div>
-                <img src = {poster} className='poster_img_like'></img>
-                <img src = {favorite} className='poster_favorite'></img>
-              </div>
-              <div>
-                <img src = {poster} className='poster_img_like'></img>
-                <img src = {favorite} className='poster_favorite'></img>
-              </div>
-              <div>
-                <img src = {poster} className='poster_img_like'></img>
-                <img src = {favorite} className='poster_favorite'></img>
-              </div>
-              <div>
-                <img src = {poster} className='poster_img_like'></img>
-                <img src = {favorite} className='poster_favorite'></img>
-              </div>
+              <SlidePoster/>
             </div>
           </div>
 
