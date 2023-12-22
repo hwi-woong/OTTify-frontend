@@ -25,10 +25,12 @@ const SlidePoster = ({data, type}) => {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: Math.min(data.length, 5),
     slidesToScroll: 1,
     nextArrow: <NextArrow/>, // 화살표 버튼을 커스텀해서 사용
-		prevArrow: <PrevArrow/>
+		prevArrow: <PrevArrow/>,
+    centerMode: false,
+    variableWidth: true,
   });
 
   return (
@@ -48,7 +50,6 @@ const SlidePoster = ({data, type}) => {
     </div>
   );
 };
-
 
 
 export default SlidePoster;

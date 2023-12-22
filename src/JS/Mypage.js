@@ -10,8 +10,6 @@ import ott from '../img/netflix.png';
 import arrow from '../img/arrow.png';
 import star from '../img/star.png';
 import poster from '../img/poster.jpg';
-import favorite from '../img/favorite.png';
-import close from '../img/close.png';
 
 
 const Mypage = () => {
