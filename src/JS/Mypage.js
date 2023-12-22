@@ -20,7 +20,30 @@ const Mypage = () => {
     navigate('/ChangeOTT');
   }
   
-  const reviews = [0.5, 0.5, 1, 1.5, 2, 2, 2.5, 3, 4, 5]
+  const reviews = [0.5, 0.5, 1, 1.5, 2, 2, 2.5, 3, 4, 5, 3, 4, 3, 4, 3, 4, 3, 4]
+  
+  const likeData = [
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+  ]
+
+
+  const hateData = [
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+  ]
 
   return (
     <div className = "Mypage">
@@ -108,41 +131,14 @@ const Mypage = () => {
           <div className='content_like'>
             <span className='like_title'>보고싶어요</span>
             <div className='like_posters'>
-              <SlidePoster/>
+              <SlidePoster data = {likeData} type = "favorite"/>
             </div>
           </div>
 
           <div className='content_hate'>
             <span className='hate_title'>관심없어요</span>
             <div className='hate_posters'>
-              <div>
-                <img src = {poster} className='poster_img_hate'></img>
-                <img src = {close} className='poster_x'></img>
-              </div>
-              <div>
-                <img src = {poster} className='poster_img_hate'></img>
-                <img src = {close} className='poster_x'></img>
-              </div>
-              <div>
-                <img src = {poster} className='poster_img_hate'></img>
-                <img src = {close} className='poster_x'></img>
-              </div>
-              <div>
-                <img src = {poster} className='poster_img_hate'></img>
-                <img src = {close} className='poster_x'></img>
-              </div>
-              <div>
-                <img src = {poster} className='poster_img_hate'></img>
-                <img src = {close} className='poster_x'></img>
-              </div>
-              <div>
-                <img src = {poster} className='poster_img_hate'></img>
-                <img src = {close} className='poster_x'></img>
-              </div>
-              <div>
-                <img src = {poster} className='poster_img_hate'></img>
-                <img src = {close} className='poster_x'></img>
-              </div>
+              <SlidePoster data = {hateData} type = "hate"/>
             </div>
           </div>
         </div>

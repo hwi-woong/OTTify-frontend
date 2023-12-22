@@ -4,9 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../CSS/SlidePoster.css'
 
-import poster from '../img/poster.jpg';
-import favorite from '../img/favorite.png';
 import arrow from '../img/arrow.png';
+import favorite from '../img/favorite.png';
+import hate from '../img/close.png';
 
 const NextArrow = ({ onClick }) => (
   <button onClick={onClick} type='button' id="nextBtn" className="sliderBtn">
@@ -20,7 +20,7 @@ const PrevArrow = ({ onClick }) => (
   </button>
 );
 
-const SlidePoster = () => {
+const SlidePoster = ({data, type}) => {
   const [sliderSettings, setSliderSettings] = useState({
     dots: false,
     infinite: false,
@@ -34,38 +34,16 @@ const SlidePoster = () => {
   return (
     <div>
       <Slider {...sliderSettings}>
-        <div className = "like_slider">
-          <img src = {poster} className='poster_img_like'></img>
-          <img src = {favorite} className='poster_favorite'></img>
-        </div>
-        <div className = "like_slider">
-          <img src = {poster} className='poster_img_like'></img>
-          <img src = {favorite} className='poster_favorite'></img>
-        </div>
-        <div className = "like_slider">
-          <img src = {poster} className='poster_img_like'></img>
-          <img src = {favorite} className='poster_favorite'></img>
-        </div>
-        <div className = "like_slider">
-          <img src = {poster} className='poster_img_like'></img>
-          <img src = {favorite} className='poster_favorite'></img>
-        </div>
-        <div className = "like_slider">
-          <img src = {poster} className='poster_img_like'></img>
-          <img src = {favorite} className='poster_favorite'></img>
-        </div>
-        <div className = "like_slider">
-          <img src = {poster} className='poster_img_like'></img>
-          <img src = {favorite} className='poster_favorite'></img>
-        </div>
-        <div className = "like_slider">
-          <img src = {poster} className='poster_img_like'></img>
-          <img src = {favorite} className='poster_favorite'></img>
-        </div>
-        <div className = "like_slider">
-          <img src = {poster} className='poster_img_like'></img>
-          <img src = {favorite} className='poster_favorite'></img>
-        </div>
+        {data.map((item, index) => (
+          <div key = {index} className="sliderAll">
+            <img src = {item.poster} className="poster_img" alt = {`Poster ${index + 1}`}/>
+            {type === 'favorite' ? (
+              <img src = {favorite} className="poster_favorite" alt = "favorite"/>
+            ) : (
+              <img src = {hate} className="poster_hate" alt = "hate"/>
+            )}
+          </div>
+        ))}
       </Slider>
     </div>
   );
