@@ -2,11 +2,14 @@ import { useNavigate } from "react-router-dom";
 import '../App.css';
 import '../CSS/Mypage.css'
 import GradeGraph from './GradeGraph';
+import PickButton from "./PickButton";
+import SlidePoster from "./SlidePoster";
 import img1 from '../img/사진.jpg';
 import badge from '../img/profile_badge.png';
 import ott from '../img/netflix.png';
 import arrow from '../img/arrow.png';
 import star from '../img/star.png';
+import poster from '../img/poster.jpg';
 
 
 const Mypage = () => {
@@ -15,7 +18,30 @@ const Mypage = () => {
     navigate('/ChangeOTT');
   }
   
-  const reviews = [0.5, 0.5, 1, 1.5, 2, 2, 2.5, 3, 4, 5]
+  const reviews = [0.5, 0.5, 1, 1.5, 2, 2, 2.5, 3, 4, 5, 3, 4, 3, 4, 3, 4, 3, 4]
+  
+  const likeData = [
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+  ]
+
+
+  const hateData = [
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+    {poster: poster},
+  ]
 
   return (
     <div className = "Mypage">
@@ -57,6 +83,60 @@ const Mypage = () => {
             </div>
             <div className='grade_graph'>
               <GradeGraph reviews = {reviews}/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='my_content'>
+        <div className='content_div'>
+          <div className='content_subject'>
+            <span className='content_mine'>내 취향 장르</span>
+            <select className='content_select' name = 'genre_1st'>
+              <option selected disabled hidden>1순위 장르</option>
+              <option value = "action">액션</option>
+              <option value = "thriller">스릴러</option>
+              <option value = "musical">뮤지컬</option>
+              <option value = "comedy">코미디</option>
+            </select>
+          </div>
+
+          <div className='content_pick' >
+            <PickButton className='pick'>액션</PickButton>
+            <PickButton className='pick'>스릴러</PickButton>
+            <PickButton className='pick'>서스펜스</PickButton>
+            <PickButton className='pick'>미스터리</PickButton>
+            <PickButton className='pick'>로맨스</PickButton>
+            <PickButton className='pick'>느와르</PickButton>
+            <PickButton className='pick'>서부극</PickButton>
+            <PickButton className='pick'>음악영화</PickButton>
+            <PickButton className='pick'>뮤지컬</PickButton>
+            <PickButton className='pick'>다큐멘터리</PickButton>
+            <PickButton className='pick'>모큐멘터리</PickButton>
+            <PickButton className='pick'>재난</PickButton>
+            <PickButton className='pick'>블록버스터</PickButton>
+            <PickButton className='pick'>스펙타클</PickButton>
+            <PickButton className='pick'>시리즈</PickButton>
+            <PickButton className='pick'>서사극</PickButton>
+            <PickButton className='pick'>로맨틱코미디</PickButton>
+            <PickButton className='pick'>코미디</PickButton>
+            <PickButton className='pick'>음악영화</PickButton>
+            <PickButton className='pick'>B급</PickButton>
+            <PickButton className='pick'>모험</PickButton>
+            <PickButton className='pick'>가족</PickButton>
+          </div>
+
+          <div className='content_like'>
+            <span className='like_title'>보고싶어요</span>
+            <div className='like_posters'>
+              <SlidePoster data = {likeData} type = "favorite"/>
+            </div>
+          </div>
+
+          <div className='content_hate'>
+            <span className='hate_title'>관심없어요</span>
+            <div className='hate_posters'>
+              <SlidePoster data = {hateData} type = "hate"/>
             </div>
           </div>
         </div>

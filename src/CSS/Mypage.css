@@ -143,3 +143,108 @@
   display: inline-block;
   margin-top: 10px;
 }
+
+
+/*콘텐츠*/
+/*내 취향 장르 (1순위)*/
+.my_content{
+  display:flex;
+  flex-direction: column;
+  width: 736px;
+  height: 538px;
+  border-radius: 15px;
+  background-color: white;
+  margin: 15px auto;
+}
+
+.content_div{
+  margin: auto 32px;
+}
+
+.content_subject{
+  display: flex;
+  align-items: center;
+}
+
+.content_mine{
+  color: var(--gray_900);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.content_select{
+  width: 175px;
+  height: 24px;
+  margin-left: 10px;
+  color: var(--primary);
+  border-radius: 5px;
+  border: 1px solid var(--gray_400);
+  padding: 1px;
+  font-size: 12px;
+}
+
+
+.content_subject .content_select option{
+  padding: 1px;
+  font-size: 12px;
+  color: black;
+  background-color: white;
+}
+
+.content_subject option:hover{
+  background-color: red;
+}
+
+.content_select option:checked{
+  width: 175px;
+  height: 24px;
+  background-color: var(--orange_100);
+  color: var(--primary);
+  padding: 8px;
+}
+
+.content_select:focus{
+  padding: 1px;
+}
+
+/*내 취향 장르 (2순위)*/
+.content_pick{
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.pick{
+  display: inline-block;
+  font-size: 11px;
+  padding: 4px 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-radius: 15px;
+  border: var(--gray_200);
+}
+
+.content_like{
+  margin-bottom: 20px;
+}
+
+.like_title, .hate_title{
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--gray_900);
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+
+/*보고싶어요, 관심없어요*/
+.content_like{
+  margin-bottom: 20px;
+}
+
+.like_title, .hate_title{
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--gray_900);
+  display: inline-block;
+  margin-bottom: 8px;
+}
