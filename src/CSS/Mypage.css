@@ -248,3 +248,48 @@
   display: inline-block;
   margin-bottom: 8px;
 }
+
+/*모아보기*/
+.my_review{
+  display: flex;
+  flex-direction: column;
+  width: 736px;
+  height: 256px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.my_review div{
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-bottom: 1px solid var(--gray_200);
+}
+
+.my_review div:last-child{
+  border-bottom: none;
+}
+
+.my_review div img{
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.my_review div a{
+  font-size: 16px;
+  color: var(--gray_700);
+}
+
+/*로그아웃*/
+.my_out{
+  margin: 32px auto;
+}
+
+.my_out a{
+  color: var(--grey);
+  font-size: 16px;
+  margin: 0 28px;
+}

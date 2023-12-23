@@ -10,7 +10,10 @@ import ott from '../img/netflix.png';
 import arrow from '../img/arrow.png';
 import star from '../img/star.png';
 import poster from '../img/poster.jpg';
-
+import write_review from '../img/write_review.png';
+import like_review from '../img/like_review.png';
+import my_debate from '../img/my_debate.png';
+import par_debate from '../img/par_debate.png';
 
 const Mypage = () => {
   const navigate = useNavigate();
@@ -140,6 +143,29 @@ const Mypage = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className='my_review'>
+        <div className='write_review'>
+          <img src = {write_review} className='write_img'></img>
+          <a className='write_text'>작성 리뷰 모아보기</a>
+        </div>
+        <div className='like_review'>
+          <img src = {like_review} className='like_img'></img>
+          <a className='like_text'>좋아요한 리뷰 모아보기</a>
+        </div>
+        <div className='my_debate'>
+          <img src = {my_debate} className='my_img'></img>
+          <a className='my_text'>내가 주최한 토론 모아보기</a>
+        </div>
+        <div className='par_debate'>
+          <img src = {par_debate} className='par_img'></img>
+          <a className='par_text'>내가 참여한 토론 모아보기</a>
+        </div>
+      </div>
+
+      <div className='my_out'>
+        <a className='log_out'>로그아웃</a>
       </div>
     </div>
   )
