@@ -163,6 +163,10 @@ const Mypage = () => {
           <a className='par_text'>내가 참여한 토론 모아보기</a>
         </div>
       </div>
+
+      <div className='my_out'>
+        <a className='log_out'>로그아웃</a>
+      </div>
     </div>
   )
 }
