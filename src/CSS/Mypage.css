@@ -249,7 +249,7 @@
   margin-bottom: 8px;
 }
 
-/*리뷰*/
+/*모아보기*/
 .my_review{
   display: flex;
   flex-direction: column;
@@ -281,4 +281,15 @@
 .my_review div a{
   font-size: 16px;
   color: var(--gray_700);
+}
+
+/*로그아웃*/
+.my_out{
+  margin: 32px auto;
+}
+
+.my_out a{
+  color: var(--grey);
+  font-size: 16px;
+  margin: 0 28px;
 }
