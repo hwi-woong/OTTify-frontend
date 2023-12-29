@@ -65,7 +65,7 @@
 /*포스터, 제목, 별점, 태그, 내용, 좋아요 수*/
 .reviewMovie{
   display: flex;
-  margin: 5px 33px;
+  margin: 16px 33px;
   padding-bottom: 8px;
   border-bottom: 1px solid var(--neutral);
 }
@@ -141,8 +141,20 @@
 }
 
 
+/*좋아요 버튼*/
+.FavoriteBtn{
+  margin-left: 33px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+}
 
 .thumbBtn{
   width: 24px;
   height: 24px;
+}
+
+.nameBtn{
+  color: var(--gray_500);
+  margin-left: 8px;
 }
