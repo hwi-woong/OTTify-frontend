@@ -30,6 +30,7 @@
 }
 
 /*ReviewItem*/
+/*프로필, 닉네임, 날짜*/
 .ReviewItem{
   width: 736px;
   height: 377px;
@@ -40,6 +41,14 @@
 
 .reviewInfo{
   display: flex;
+  align-items: center;
+  padding-top: 34px;
+  padding-left: 33px;
+}
+
+.writerInfo {
+  display: flex;
+  align-items: center;
 }
 
 .writer_profile{
@@ -48,15 +57,22 @@
   border-radius: 50%;
 }
 
+.writer{
+  margin-left: 8px;
+  width: 590px;
+}
+
+/*포스터, 제목, 별점, 태그, 내용, 좋아요 수*/
+.reviewMovie{
+  display: flex;
+}
+
 .reviewPoster{
   width: 119px;
   height: 170px;
   border-radius: 7px;
 }
 
-.reviewMovie{
-  display: flex;
-}
 
 .reviewthumb{
   width: 14px;
