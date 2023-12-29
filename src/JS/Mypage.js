@@ -83,8 +83,8 @@ const Mypage = () => {
                   <img src = {img1} className="edit_img"></img>
                   <img src = {change_img} className="change_img"></img>
                 </div>
+                <span className="nickname">닉네임</span>
                 <div className="modal_nickname">
-                  <span className="nickname">닉네임</span>
                   <input className="nickname_input"></input>
                   <button className="nickname_btn">변경</button>
                 </div>

@@ -327,12 +327,14 @@
 .modal_nickname{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .nickname{
   color: var(--gray_500);
   font-size: 16px;
-  margin-top: 16px;
+  margin: 16px 0 0 16px;
   font-weight: 500;
 }
 
