@@ -345,3 +345,13 @@
   margin-top: 2px;
   padding: auto 0 15px;
 }
+
+.nickname_btn{
+  width: 672px;
+  height: 44px;
+  border-radius: 7px;
+  background-color: var(--orange_100);
+  color: var(--primary);
+  border: none;
+  margin-top: 14px;
+}
