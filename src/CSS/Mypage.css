@@ -307,6 +307,7 @@
 .modal_img{
   position: relative;
   text-align: center;
+  margin-top: 15px;
 }
 
 .edit_img{
@@ -323,3 +324,24 @@
   right: 47%;
 }
 
+.modal_nickname{
+  display: flex;
+  flex-direction: column;
+}
+
+.nickname{
+  color: var(--gray_500);
+  font-size: 16px;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+.nickname_input{
+  width: 672px;
+  height: 45px;
+  border-radius: 7px;
+  background-color: var(--neutral2);
+  border: none;
+  margin-top: 2px;
+  padding: auto 0 15px;
+}
