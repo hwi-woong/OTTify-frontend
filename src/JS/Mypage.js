@@ -25,7 +25,10 @@ const Mypage = () => {
   const goToOTT = () => {
     navigate('/ChangeOTT');
   }
-  
+  const goToWrite = () => {
+    navigate('/MyWrite');
+  }
+
   const reviews = [0.5, 0.5, 1, 1.5, 2, 2, 2.5, 3, 4, 5, 3, 4, 3, 4, 3, 4, 3, 4]
   
   const likeData = [
@@ -174,7 +177,7 @@ const Mypage = () => {
       </div>
 
       <div className='my_review'>
-        <div className='write_review'>
+        <div className='write_review' onClick={goToWrite}>
           <img src = {write_review} className='write_img'></img>
           <a className='write_text'>작성 리뷰 모아보기</a>
         </div>
