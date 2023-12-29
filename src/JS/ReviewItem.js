@@ -1,5 +1,5 @@
 import '../CSS/MyWrite.css';
-import star from '../img/star.png'
+import star from '../img/star1.png'
 import thumb from '../img/thumb_up.png';
 const ReviewItem = ({author, profileimg, movie, poster, tag, content, created_date, evaluation, favorite, id}) =>{
   return (
@@ -19,15 +19,17 @@ const ReviewItem = ({author, profileimg, movie, poster, tag, content, created_da
           <div className="reviewPick">
             <img src = {star} className='star' alt = "별점"></img>
             <span className='reviewNum'>{evaluation}</span>
-            <span className='tag_1'>{tag[0]}</span>
-            <span className='tag_2'>{tag[1]}</span>
+            <div className='tags'>
+              <span className='tag_1'>{tag[0]}</span>
+              <span className='tag_2'>{tag[1]}</span>
+            </div>
           </div>
           <div className='reviewContent'>
             {content}
           </div>
           <div className='reviewFavorite'>
             <img src = {thumb} className='reviewthumb' alt = "좋아요"></img>
-            <span className='thubNum'>{favorite}</span>
+            <span className='thumbNum'>{favorite}</span>
           </div>
         </div>
       </div>
