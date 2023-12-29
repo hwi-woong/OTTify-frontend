@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import ReviewList from './ReviewList';
 import '../CSS/MyWrite.css'
 
@@ -6,7 +7,10 @@ import img1 from '../img/사진.jpg';
 import poster from '../img/poster.jpg';
 
 const MyWrite = () =>{
-
+  const navigate = useNavigate();
+  const goToMypage = () => {
+    navigate('/');
+  }
   const dummyList = [
   {
     id: 1,
@@ -53,7 +57,7 @@ const MyWrite = () =>{
     <div className='MyWrite'>
       <div className = "mywrite_page">
         <div className = "mywrite_title">
-          <img src = {back} className = "mywrite_back" alt = "뒤로 가기"/>
+          <img src = {back} className = "mywrite_back" alt = "뒤로 가기" onClick={goToMypage}/>
           <h2>내가 쓴 리뷰</h2>
         </div>
         <ReviewList reviewList={dummyList}/>
