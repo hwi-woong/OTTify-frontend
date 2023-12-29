@@ -79,11 +79,15 @@ const Mypage = () => {
               <button className='edit_btn' onClick={openModal}>프로필 변경</button>
               <Modal open={modalOpen} close={closeModal}>
                 <img src = {close_gray} className="modal_close" onClick={closeModal}></img>
-                <img src = {img1} className="edit_img"></img>
-                <img src = {change_img} className="change_img"></img>
-                <span className="nickname">닉네임</span>
-                <input className="nickname_input"></input>
-                <button className="nickname_btn">변경</button>
+                <div className="modal_img">
+                  <img src = {img1} className="edit_img"></img>
+                  <img src = {change_img} className="change_img"></img>
+                </div>
+                <div className="modal_nickname">
+                  <span className="nickname">닉네임</span>
+                  <input className="nickname_input"></input>
+                  <button className="nickname_btn">변경</button>
+                </div>
               </Modal>
             </div>
           </div>

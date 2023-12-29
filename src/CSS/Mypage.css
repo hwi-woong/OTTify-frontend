@@ -298,13 +298,28 @@
 
 
 /*프로필 변경 모달*/
+.modal_close{
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+
+.modal_img{
+  position: relative;
+  text-align: center;
+}
+
 .edit_img{
   width: 130px;
   height: 130px;
-  border-radius: 50%;
-}
+  border-radius: 50%; 
+  }
 
 .change_img{
   width: 60px;
-  height: 60px
+  height: 60px;
+  position: absolute;
+  top: 27%;
+  right: 47%;
 }
+
