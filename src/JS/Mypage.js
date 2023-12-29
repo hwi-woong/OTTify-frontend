@@ -1,9 +1,12 @@
 import { useNavigate } from "react-router-dom";
+import {useState} from "react";
 import '../App.css';
 import '../CSS/Mypage.css'
 import GradeGraph from './GradeGraph';
 import PickButton from "./PickButton";
 import SlidePoster from "./SlidePoster";
+import Modal from "./ProfileEdit";
+
 import img1 from '../img/사진.jpg';
 import badge from '../img/profile_badge.png';
 import ott from '../img/netflix.png';
@@ -14,6 +17,8 @@ import write_review from '../img/write_review.png';
 import like_review from '../img/like_review.png';
 import my_debate from '../img/my_debate.png';
 import par_debate from '../img/par_debate.png';
+import change_img from '../img/change_img.png';
+import close_gray from '../img/close_gray.png';
 
 const Mypage = () => {
   const navigate = useNavigate();
@@ -46,6 +51,17 @@ const Mypage = () => {
     {poster: poster},
   ]
 
+
+  // useState를 사용하여 open상태를 변경한다. (open일때 true로 만들어 열리는 방식)
+  const [modalOpen, setModalOpen] = useState(false)
+
+  const openModal = () => {
+    setModalOpen(true)
+  }
+  const closeModal = () => {
+    setModalOpen(false)
+  }
+
   return (
     <div className = "Mypage">
       <div className = "my_profile">
@@ -60,7 +76,15 @@ const Mypage = () => {
               <span className='email'>leeeeemmmsanngg@naver.com</span>
             </div>
             <div className='info_edit'>
-              <button className='edit_btn'>프로필 변경</button>
+              <button className='edit_btn' onClick={openModal}>프로필 변경</button>
+              <Modal open={modalOpen} close={closeModal}>
+                <img src = {close_gray} className="modal_close" onClick={closeModal}></img>
+                <img src = {img1} className="edit_img"></img>
+                <img src = {change_img} className="change_img"></img>
+                <span className="nickname">닉네임</span>
+                <input className="nickname_input"></input>
+                <button className="nickname_btn">변경</button>
+              </Modal>
             </div>
           </div>
 
