@@ -1,7 +1,14 @@
+/*리뷰 제목*/
+.MyWrite{
+  background-color: var(--neutral);
+}
+
 .mywrite_page{
   display: flex;
   flex-direction: column;
-  margin: 38px 597px;
+  margin: 0 auto;
+  padding-top: 38px;
+  width: 736px;
 }
 
 .mywrite_title{
@@ -20,4 +27,43 @@
   margin: 0;
   display: flex;
   align-items: center;
+}
+
+/*ReviewItem*/
+.ReviewItem{
+  width: 736px;
+  height: 377px;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 16px;
+}
+
+.reviewInfo{
+  display: flex;
+}
+
+.writer_profile{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.reviewPoster{
+  width: 119px;
+  height: 170px;
+  border-radius: 7px;
+}
+
+.reviewMovie{
+  display: flex;
+}
+
+.reviewthumb{
+  width: 14px;
+  height: 14px;
+}
+
+.thumbBtn{
+  width: 24px;
+  height: 24px;
 }

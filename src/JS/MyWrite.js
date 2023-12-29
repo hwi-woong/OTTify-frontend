@@ -50,12 +50,14 @@ const MyWrite = () =>{
 
 
   return (
-    <div className = "mywrite_page">
-      <div className = "mywrite_title">
-        <img src = {back} className = "mywrite_back" alt = "뒤로 가기"/>
-        <h2>내가 쓴 리뷰</h2>
+    <div className='MyWrite'>
+      <div className = "mywrite_page">
+        <div className = "mywrite_title">
+          <img src = {back} className = "mywrite_back" alt = "뒤로 가기"/>
+          <h2>내가 쓴 리뷰</h2>
+        </div>
+        <ReviewList reviewList={dummyList}/>
       </div>
-      <ReviewList reviewList={dummyList}/>
     </div>
   )
 }
