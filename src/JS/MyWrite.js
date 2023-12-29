@@ -1,8 +1,8 @@
 import ReviewList from './ReviewList';
 import '../CSS/MyWrite.css'
 
-import img1 from '../img/사진.jpg';
 import back from '../img/back.png';
+import img1 from '../img/사진.jpg';
 import poster from '../img/poster.jpg';
 
 const MyWrite = () =>{
