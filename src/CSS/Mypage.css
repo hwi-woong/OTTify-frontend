@@ -293,3 +293,67 @@
   font-size: 16px;
   margin: 0 28px;
 }
+
+
+
+
+/*프로필 변경 모달*/
+.modal_close{
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+
+.modal_img{
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.edit_img{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%; 
+  }
+
+.change_img{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 27%;
+  right: 47%;
+}
+
+.modal_nickname{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nickname{
+  color: var(--gray_500);
+  font-size: 16px;
+  margin: 16px 0 0 16px;
+  font-weight: 500;
+}
+
+.nickname_input{
+  width: 672px;
+  height: 45px;
+  border-radius: 7px;
+  background-color: var(--neutral2);
+  border: none;
+  margin-top: 2px;
+  padding: auto 0 15px;
+}
+
+.nickname_btn{
+  width: 672px;
+  height: 44px;
+  border-radius: 7px;
+  background-color: var(--orange_100);
+  color: var(--primary);
+  border: none;
+  margin-top: 14px;
+}
