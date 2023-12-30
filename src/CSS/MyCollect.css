@@ -92,11 +92,9 @@ body{
 }
 
 /*포스터, 제목, 별점, 태그, 내용, 좋아요 수*/
-.reviewMovie{
-  display: flex;
+.reviewMain{
   margin: 16px 33px;
   padding-bottom: 8px;
-  border-bottom: 1px solid var(--neutral);
 }
 
 .reviewPoster{
@@ -109,11 +107,9 @@ body{
   color: var(--gray_800);
   font-size: 22px;
   font-weight: 600;
-  margin-left: 16px;
 }
 
 .reviewPick{
-  margin-left: 16px;
   margin-top: 6px;
   display: flex;
   align-items: center;
@@ -142,9 +138,7 @@ body{
 }
 
 .reviewContent{
-  margin-left: 16px;
   margin-top: 22px;
-  width: 533px;
   font-size: 16px;
 }
 
@@ -152,7 +146,6 @@ body{
   display: flex;
   align-items: center;
   margin-top: 14px;
-  float: right;
 }
 
 .reviewthumb{
