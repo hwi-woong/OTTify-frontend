@@ -61,10 +61,11 @@ body{
 /*프로필, 닉네임, 날짜*/
 .ReviewItem{
   width: 736px;
-  height: 377px;
   background-color: white;
   border-radius: 15px;
   margin-top: 16px;
+  height: auto;
+  overflow: hidden;
 }
 
 .reviewInfo{
@@ -144,10 +145,7 @@ body{
   margin-left: 16px;
   margin-top: 22px;
   width: 533px;
-  height: 90px;
   font-size: 16px;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .reviewFavorite{
@@ -171,8 +169,7 @@ body{
 
 /*좋아요 버튼*/
 .FavoriteBtn{
-  margin-left: 33px;
-  margin-top: 24px;
+  margin: 32px;
   display: flex;
   align-items: center;
 }
