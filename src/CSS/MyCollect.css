@@ -1,12 +1,12 @@
-/*리뷰 제목*/
-.MyWrite{
+/*내가 쓴 리뷰 모아보기 제목*/
+body{
   background-color: var(--neutral);
 }
 
 .mywrite_page{
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   padding-top: 38px;
   width: 736px;
 }
@@ -29,14 +29,43 @@
   align-items: center;
 }
 
+
+/*내가 좋아요한 리뷰 모아보기 제목*/
+.myfavorite_page{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 30px;
+  padding-top: 38px;
+  width: 736px;
+}
+
+.myfavorite_title{
+  display: flex;
+}
+
+.myfavorite_back{
+  width: 45px;
+  height: 45px;
+}
+
+.myfavorite_title h2{
+  color: var(--gray_800);
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
 /*ReviewItem*/
 /*프로필, 닉네임, 날짜*/
 .ReviewItem{
   width: 736px;
-  height: 377px;
   background-color: white;
   border-radius: 15px;
   margin-top: 16px;
+  height: auto;
+  overflow: hidden;
 }
 
 .reviewInfo{
@@ -63,11 +92,9 @@
 }
 
 /*포스터, 제목, 별점, 태그, 내용, 좋아요 수*/
-.reviewMovie{
-  display: flex;
+.reviewMain{
   margin: 16px 33px;
   padding-bottom: 8px;
-  border-bottom: 1px solid var(--neutral);
 }
 
 .reviewPoster{
@@ -80,11 +107,9 @@
   color: var(--gray_800);
   font-size: 22px;
   font-weight: 600;
-  margin-left: 16px;
 }
 
 .reviewPick{
-  margin-left: 16px;
   margin-top: 6px;
   display: flex;
   align-items: center;
@@ -113,20 +138,14 @@
 }
 
 .reviewContent{
-  margin-left: 16px;
   margin-top: 22px;
-  width: 533px;
-  height: 90px;
   font-size: 16px;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .reviewFavorite{
   display: flex;
   align-items: center;
   margin-top: 14px;
-  float: right;
 }
 
 .reviewthumb{
@@ -143,8 +162,7 @@
 
 /*좋아요 버튼*/
 .FavoriteBtn{
-  margin-left: 33px;
-  margin-top: 24px;
+  margin: 32px;
   display: flex;
   align-items: center;
 }
