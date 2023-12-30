@@ -29,6 +29,10 @@ const Mypage = () => {
     navigate('/MyWrite');
   }
 
+  const goToFavorite = () => {
+    navigate('/MyFavorite');
+  }
+
   const reviews = [0.5, 0.5, 1, 1.5, 2, 2, 2.5, 3, 4, 5, 3, 4, 3, 4, 3, 4, 3, 4]
   
   const likeData = [
@@ -181,7 +185,7 @@ const Mypage = () => {
           <img src = {write_review} className='write_img'></img>
           <a className='write_text'>작성 리뷰 모아보기</a>
         </div>
-        <div className='like_review'>
+        <div className='like_review' onClick={goToFavorite}>
           <img src = {like_review} className='like_img'></img>
           <a className='like_text'>좋아요한 리뷰 모아보기</a>
         </div>
