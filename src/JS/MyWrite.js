@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import ReviewList from './ReviewList';
-import '../CSS/MyWrite.css'
+import '../CSS/MyCollect.css'
 
 import back from '../img/back.png';
 import img1 from '../img/사진.jpg';

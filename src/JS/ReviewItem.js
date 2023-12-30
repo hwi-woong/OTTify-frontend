@@ -1,4 +1,4 @@
-import '../CSS/MyWrite.css';
+import '../CSS/MyCollect.css';
 import star from '../img/star1.png'
 import thumb from '../img/thumb_up.png';
 const ReviewItem = ({author, profileimg, movie, poster, tag, content, created_date, evaluation, favorite, id}) =>{
