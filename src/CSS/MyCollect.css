@@ -1,12 +1,12 @@
 /*내가 쓴 리뷰 모아보기 제목*/
-.MyWrite{
+body{
   background-color: var(--neutral);
 }
 
 .mywrite_page{
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   padding-top: 38px;
   width: 736px;
 }
@@ -31,14 +31,10 @@
 
 
 /*내가 좋아요한 리뷰 모아보기 제목*/
-.MyFavorite{
-  background-color: var(--neutral);
-}
-
 .myfavorite_page{
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   padding-top: 38px;
   width: 736px;
 }
