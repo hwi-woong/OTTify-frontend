@@ -7,11 +7,13 @@ import MyWrite from './JS/MyWrite';
 import MyFavorite from './JS/MyFavorite';
 import MyParticipate from './JS/MyParticipate';
 import MyHost from './JS/MyHost';
+import Nav from './JS/Nav';
 
 function App() {
   return (
     <BrowserRouter>
       <ScrollToTop>
+        <Nav/>
         <Routes>
           <Route path="/" element={<Mypage />} />
           <Route path="/ChangeOTT" element={<ChangeOTT />} />
