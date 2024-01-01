@@ -29,3 +29,50 @@
   display: flex;
   align-items: center;
 }
+
+/*DebateItem*/
+.DebateItem{
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 16px;
+  padding: 24px;
+}
+
+.debateInfo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.movieInfo{
+  display: flex;
+  flex-direction: column;
+}
+
+.movie{
+  color: var(--gray_500);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.debateTitle{
+  color: var(--gray_800);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.writeDate{
+  color: var(--gray_800);
+  font-size: 14px;
+  font-weight: 400;  
+}
+
+.debateImg{
+  width: 687px;
+  height: 392px;
+  border-radius: 7px;
+}
+
+.debatethumb, .debatereply{
+  width: 14px;
+  height: 14px;
+}
