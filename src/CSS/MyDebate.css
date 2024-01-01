@@ -30,6 +30,10 @@
   align-items: center;
 }
 
+.DebateList{
+  margin-top: 16px;
+}
+
 /*DebateItem*/
 .DebateItem{
   background-color: white;
@@ -52,6 +56,7 @@
   color: var(--gray_500);
   font-size: 12px;
   font-weight: 600;
+  margin-bottom: 3px;
 }
 
 .debateTitle{
@@ -64,12 +69,19 @@
   color: var(--gray_800);
   font-size: 14px;
   font-weight: 400;  
+  margin-top: 28px;
 }
+
 
 .debateImg{
   width: 687px;
   height: 392px;
   border-radius: 7px;
+  margin-top: 16px;
+}
+
+.debateImgMain div{
+  margin-top: 16px;
 }
 
 .debatethumb, .debatereply{

@@ -2,6 +2,7 @@ import thumb from '../img/thumb_up.png';
 import chat from '../img/chat.png';
 const ReviewItem = ({debateTitle, movie, poster, content, created_date, comment, favorite, id}) =>{
   const imgClassName = poster.poster ? 'debateImg' : 'withoutImg';
+  const MainClassName = poster.poster ? 'debateImgMain' : 'debateMain';
   return (
     <div className = "DebateItem">
       <div className="debateInfo">
@@ -12,9 +13,9 @@ const ReviewItem = ({debateTitle, movie, poster, content, created_date, comment,
         <span className="writeDate">{created_date}</span>
       </div>
 
-      <div className="debateMain">
+      <div className={`${MainClassName}`}>
         <img src = {poster.poster} className={`${imgClassName}`}></img>
-        <div className='reviewContent'>{content}</div>  
+        <div className='debateContent'>{content}</div>  
       </div>
 
       <div className='debateReaction'>
