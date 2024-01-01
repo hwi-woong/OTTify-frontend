@@ -1,0 +1,17 @@
+.footer{
+  height: 50px;
+  background-color: var(--neutral);
+  border-top: 1px solid var(--gray_400);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.tave-balak{
+  margin-right: 24px;
+}
+
+.footer_email{
+  margin-left: 430px;
+}
