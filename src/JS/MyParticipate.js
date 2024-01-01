@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import DebateList from './DebateList';
+import '../CSS/MyDebate.css'
+
 import back from '../img/back.png';
 import poster from '../img/debate_poster.png';
 
