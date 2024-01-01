@@ -21,11 +21,11 @@ const ReviewItem = ({debateTitle, movie, poster, content, created_date, comment,
       <div className='debateReaction'>
         <div className='debateFavorite'>
           <img src = {thumb} className='debatethumb' alt = "좋아요"></img>
-          <span className='thumbNum'>{favorite}</span>
+          <span className='debatethumbNum'>{favorite}</span>
         </div>
         <div className='debateComment'>
           <img src = {chat} className='debatereply' alt = "댓글"></img>
-          <span className='thumbNum'>{comment}</span>
+          <span className='debatecommentNum'>{comment}</span>
         </div>
       </div>
     </div>

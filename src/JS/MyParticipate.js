@@ -54,7 +54,7 @@ const MyParticipate = () =>{
       <div className = "myparticipate_page">
         <div className = "myparticipate_title">
           <img src = {back} className = "myparticipate_back" alt = "뒤로 가기" onClick={goToMypage}/>
-          <h2>내가 참여한 토론 모아보기</h2>
+          <h2>내가 참여한 토론 보기</h2>
         </div>
         <DebateList debateList={dummyList}/>
       </div>
