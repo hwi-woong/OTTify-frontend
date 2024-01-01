@@ -5,6 +5,7 @@ import Mypage from './JS/Mypage';
 import ChangeOTT from './JS/ChangeOTT';
 import MyWrite from './JS/MyWrite';
 import MyFavorite from './JS/MyFavorite';
+import MyParticipate from './JS/MyParticipate';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/ChangeOTT" element={<ChangeOTT />} />
           <Route path="/MyWrite" element={<MyWrite/>}/>
           <Route path="/MyFavorite" element={<MyFavorite/>}/>
+          <Route path="/MyParticipate" element={<MyParticipate/>}/>
         </Routes>
       </ScrollToTop>
     </BrowserRouter> 

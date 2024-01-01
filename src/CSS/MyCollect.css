@@ -1,13 +1,14 @@
 /*내가 쓴 리뷰 모아보기 제목*/
-body{
+.MyWrite, .MyFavorite{
   background-color: var(--neutral);
 }
 
 .mywrite_page{
   display: flex;
   flex-direction: column;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   padding-top: 38px;
+  padding-bottom: 30px;
   width: 736px;
 }
 
@@ -34,8 +35,9 @@ body{
 .myfavorite_page{
   display: flex;
   flex-direction: column;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   padding-top: 38px;
+  padding-bottom: 30px;
   width: 736px;
 }
 
@@ -57,22 +59,26 @@ body{
   align-items: center;
 }
 
+.ReviewList{
+  margin-top: 16px;
+}
+
 /*ReviewItem*/
 /*프로필, 닉네임, 날짜*/
 .ReviewItem{
   width: 736px;
   background-color: white;
   border-radius: 15px;
-  margin-top: 16px;
   height: auto;
   overflow: hidden;
+  padding: 24px;
+  margin-bottom: 16px;
 }
 
 .reviewInfo{
   display: flex;
   align-items: center;
-  padding-top: 34px;
-  padding-left: 33px;
+  justify-content: space-between;
 }
 
 .writerInfo {
@@ -88,12 +94,11 @@ body{
 
 .writer{
   margin-left: 8px;
-  width: 590px;
 }
 
 /*포스터, 제목, 별점, 태그, 내용, 좋아요 수*/
 .reviewMain{
-  margin: 16px 33px;
+  margin: 16px 0;
   padding-bottom: 8px;
 }
 
