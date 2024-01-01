@@ -1,9 +1,10 @@
 /*내가 참여한 토론 모아보기*/
-.MyParticipate{
+/*내가 주최한 토론 모아보기*/
+.MyParticipate, .MyHost{
   background-color: var(--neutral);
 }
 
-.myparticipate_page{
+.myparticipate_page, .myhost_page{
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -12,16 +13,16 @@
   width: 736px;
 }
 
-.myparticipate_title{
+.myparticipate_title, .myhost_title{
   display: flex;
 }
 
-.myparticipate_back{
+.myparticipate_back, .myhost_back{
   width: 45px;
   height: 45px;
 }
 
-.myparticipate_title h2{
+.myparticipate_title h2, .myhost_title h2{
   color: var(--gray_800);
   font-size: 24px;
   font-weight: 600;

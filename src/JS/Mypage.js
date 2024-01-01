@@ -37,6 +37,10 @@ const Mypage = () => {
     navigate('/MyParticipate');
   }
 
+  const goToHost = () =>{
+    navigate('/MyHost');
+  }
+
   const reviews = [0.5, 0.5, 1, 1.5, 2, 2, 2.5, 3, 4, 5, 3, 4, 3, 4, 3, 4, 3, 4]
   
   const likeData = [
@@ -193,7 +197,7 @@ const Mypage = () => {
           <img src = {like_review} className='like_img'></img>
           <a className='like_text'>좋아요한 리뷰 모아보기</a>
         </div>
-        <div className='my_debate'>
+        <div className='my_debate' onClick={goToHost}>
           <img src = {my_debate} className='my_img'></img>
           <a className='my_text'>내가 주최한 토론 모아보기</a>
         </div>
