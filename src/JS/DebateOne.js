@@ -5,7 +5,10 @@ import '../CSS/MyDebate.css';
 import back from '../img/back.png';
 import poster from '../img/debate_poster.png';
 
-const DebateAll = () =>{
+const DebateOne = ({MovieTitle}) =>{
+
+  MovieTitle =  "나폴레옹";
+
   const navigate = useNavigate();
   const goToMypage = () => {
     navigate('/');
@@ -50,11 +53,12 @@ const DebateAll = () =>{
 
 
   return (
-    <div className='DebateAll'>
-      <div className = "debateall_page">
-        <div className = "debateall_title">
-          <img src = {back} className = "debateall_back" alt = "뒤로 가기" onClick={goToMypage}/>
-          <h2>전체 토론 보기</h2>
+    <div className='DebateOne'>
+      <div className = "debateone_page">
+        <div className = "debateone_title">
+          <img src = {back} className = "debateone_back" alt = "뒤로 가기" onClick={goToMypage}/>
+          <h2>{`토론 > ${MovieTitle}`}</h2>
+          <button className="debate_write">토론하기</button>
         </div>
         <DebateList debateList={dummyList}/>
       </div>
@@ -62,4 +66,4 @@ const DebateAll = () =>{
   )
 }
 
-export default DebateAll;
+export default DebateOne;

@@ -13,6 +13,10 @@ const Nav = () =>{
   const goToDebate = () => {
     navigate('/DebateAll');
   }
+  const goToOne = () => {
+    navigate('/DebateOne');
+  }
+
   return (
     <ul className="navbar">
       <li className="nav-item" onClick = {goToMypage}>
@@ -25,7 +29,7 @@ const Nav = () =>{
         <input type="text" className = "nav_search" placeholder="콘텐츠를 검색해보세요. (작품명, 태그, 감독, 배우, 유저)" />
         <img src = {search} className='search_icon' alt ="검색"></img>
       </li>
-      <li className="nav-item">
+      <li className="nav-item" onClick = {goToOne}>
         <img src={profile} className='nav_profile' alt="User"/>
       </li>
     </ul>
