@@ -50,10 +50,10 @@ const DebateAll = () =>{
 
 
   return (
-    <div className='MyHost'>
-      <div className = "myhost_page">
-        <div className = "myhost_title">
-          <img src = {back} className = "myhost_back" alt = "뒤로 가기" onClick={goToMypage}/>
+    <div className='DebateAll'>
+      <div className = "debateall_page">
+        <div className = "debateall_title">
+          <img src = {back} className = "debateall_back" alt = "뒤로 가기" onClick={goToMypage}/>
           <h2>전체 토론 보기</h2>
         </div>
         <DebateList debateList={dummyList}/>
