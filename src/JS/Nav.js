@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import '../CSS/Nav.css'
 
 import ottify from '../img/ottify.png';
@@ -5,12 +6,19 @@ import profile from '../img/사진.jpg';
 import search from '../img/search.png';
 
 const Nav = () =>{
+  const navigate = useNavigate();
+  const goToMypage = () => {
+    navigate('/');
+  }
+  const goToDebate = () => {
+    navigate('/DebateAll');
+  }
   return (
     <ul className="navbar">
-      <li className="nav-item">
+      <li className="nav-item" onClick = {goToMypage}>
         <img src={ottify} className='nav_logo' alt="Logo"/>
       </li>
-      <li className="nav-item">
+      <li className="nav-item" onClick = {goToDebate}>
         <span className='nav_debate'>토론</span>
       </li>
       <li className="nav-item search">
