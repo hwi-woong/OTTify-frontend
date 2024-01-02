@@ -9,6 +9,7 @@ import MyParticipate from './JS/MyParticipate';
 import MyHost from './JS/MyHost';
 import Nav from './JS/Nav';
 import Footer from './JS/Footer';
+import DebateAll from './JS/DebateAll';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/MyFavorite" element={<MyFavorite/>}/>
           <Route path="/MyParticipate" element={<MyParticipate/>}/>
           <Route path="/MyHost" element={<MyHost/>}/>
+          <Route path="/DebateAll" element={<DebateAll/>}/>
         </Routes>
         <Footer/>
       </ScrollToTop>
