@@ -53,11 +53,12 @@ const DebateOne = ({MovieTitle}) =>{
 
 
   return (
-    <div className='MyHost'>
-      <div className = "myhost_page">
-        <div className = "myhost_title">
-          <img src = {back} className = "myhost_back" alt = "뒤로 가기" onClick={goToMypage}/>
+    <div className='DebateOne'>
+      <div className = "debateone_page">
+        <div className = "debateone_title">
+          <img src = {back} className = "debateone_back" alt = "뒤로 가기" onClick={goToMypage}/>
           <h2>{`토론 > ${MovieTitle}`}</h2>
+          <button className="debate_write">토론하기</button>
         </div>
         <DebateList debateList={dummyList}/>
       </div>
