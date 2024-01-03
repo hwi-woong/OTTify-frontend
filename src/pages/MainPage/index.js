@@ -32,7 +32,7 @@ const MainPage = () => {
 // 트렌딩 아이템 배열
 const trendingItems = [
   {
-    title: '스위트 홈 시즌 2',
+    title: '스위트 홈 시즌 1',
     posterUrl: sweethome, // Use the imported image here
     releaseYear: 2022, // Add the release year
     rating: '4.5/5',
